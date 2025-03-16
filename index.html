@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 class="title">Rock - Paper - Scissors Game</h1>
+    <div id="start-container">
+      <button id="start-btn" onclick="startGame()">Start Game</button>
+    </div>
+    <div class="container" id="game-container">
+      <div class="btns">
+        <button class="choices" onclick="playGame('rock')">👊</button>
+        <button class="choices" onclick="playGame('paper')">✋</button>
+        <button class="choices" onclick="playGame('scissor')">✌️</button>
+      </div>
+      <div class="result-container">
+        <div class="box">
+          <p>Player:</p>
+          <p class="display" id="playerDisplay"></p>
+        </div>
+        <div class="box">
+          <p>Computer:</p>
+          <p class="display" id="computerDisplay"></p>
+        </div>
+        <p class="display" id="result"></p>
+
+        <div class="score-container">
+          <div class="box">
+            <p>Player Score:</p>
+            <p id="playerScoreDisplay">0</p>
+          </div>
+          <div class="box">
+            <p>Computer Score:</p>
+            <p id="computerScoreDisplay">0</p>
+          </div>
+        </div>
+      </div>
+      <div class="total-games">
+        <p>Total Games Played:</p>
+        <p id="totalGamesDisplay">0</p>
+      </div>
+
+      <div class="menu-buttons">
+        <button class="menu-btn" id="endGame" onclick="endGame()">
+          End Game
+        </button>
+        <button class="menu-btn" id="reStartGame" onclick="reStartGame()">
+          Re-Start Game
+        </button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
